@@ -27,7 +27,7 @@ SECRET_KEY = "django-insecure-mryn(=3458xle*o!jmse@2thmlo55hj@np_@%wi6eik&g*c0ep
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["127.0.0.1", "localhost", "django-rest-api-ob4j.onrender.com"]
+ALLOWED_HOSTS = ["127.0.0.1", "localhost", "django-rest-api-ugje.onrender.com"]
 
 
 # Application definition
