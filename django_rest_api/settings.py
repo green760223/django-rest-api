@@ -131,7 +131,13 @@ USE_I18N = True
 
 USE_TZ = True
 
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOWED_ORIGINS = [
+    "127.0.0.1",
+    "localhost",
+    "django-rest-api-ugje.onrender.com",
+]
+
+CORS_ALLOW_CREDENTIALS = True
 
 APPEND_SLASH = False
 
