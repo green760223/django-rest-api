@@ -6,7 +6,7 @@ from rest_framework_simplejwt.tokens import RefreshToken
 class RegisterSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ("username", "password", "email", "first_name", "last_name")
+        fields = ("username", "password", "email", "firstname", "lastname")
         extra_kwargs = {"password": {"write_only": True}}
 
     def create(self, validated_data):
@@ -14,8 +14,8 @@ class RegisterSerializer(serializers.ModelSerializer):
             username=validated_data["username"],
             email=validated_data["email"],
             password=validated_data["password"],
-            first_name=validated_data["first_name"],
-            last_name=validated_data["last_name"],
+            first_name=validated_data["firstname"],
+            last_name=validated_data["lastname"],
         )
         return user
 
@@ -28,4 +28,4 @@ class LoginSerializer(serializers.Serializer):
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ["id", "username", "email"]
+        fields = ["id", "username", "email", "firstname", "lastname"]
