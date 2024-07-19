@@ -32,6 +32,7 @@ ALLOWED_HOSTS = [
     "127.0.0.1",
     "localhost",
     "django-rest-api-ugje.onrender.com",
+    "d36efld3pkkz5f.cloudfront.net",
     "34.214.65.241",
 ]
 
