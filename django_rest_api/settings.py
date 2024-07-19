@@ -149,6 +149,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:5173",
     "http://localhost:5173",
     "https://django-rest-api-ugje.onrender.com",
+    "https://lawrence-django-react-app.s3-website-us-west-2.amazonaws.com/",
 ]
 
 CORS_ALLOW_CREDENTIALS = True
