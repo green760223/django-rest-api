@@ -19,8 +19,8 @@ class RegisterView(generics.CreateAPIView):
             username=serializer.validated_data["username"],
             password=serializer.validated_data["password"],
             email=serializer.validated_data["email"],
-            first_name=serializer.validated_data["firstname"],
-            last_name=serializer.validated_data["lastname"],
+            first_name=serializer.validated_data["first_name"],
+            last_name=serializer.validated_data["last_name"],
         )
 
         user_serializer = UserSerializer(user)
